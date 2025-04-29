@@ -1,42 +1,73 @@
 # 🔍 Port Scanner
 
-A powerful multithreaded TCP port scanner written in Python. Supports customizable port ranges, thread count, host availability check, service identification, banner grabbing, and more!
+A powerful, multithreaded TCP port scanner built with Python. This tool enables efficient and customizable scanning with support for port range selection, threading, host availability checks, service identification, banner grabbing, output logging, and more.
+
+---
 
 ## 🚀 Usage
 
 ```bash
 python scanner.py --target <TARGET> --ports <START-END> [options]
+```
 
+### 📌 Example
 
-Example
+```bash
 python scanner.py --target scanme.nmap.org --ports 1-100 --threads 50 --output results.txt --verbose
+```
 
-⚙️ Options
+---
 
-| Option               | Description                                      |
-|----------------------|--------------------------------------------------|
-| `--target`           | Target domain or IP address                      |
-| `--ports`            | Port range (e.g., `1-1024`)                      |
-| `--threads`          | Number of concurrent threads (default: 100)     |
-| `--output`           | Save results to a file                           |
-| `--verbose`          | Enable detailed output                           |
+## ⚙️ Command-Line Options
 
+ Option                   Description                                         
 
-✨ Features
-✅ Multithreaded scanning
+ `--target`              Target domain or IP address
+                         
+ `--ports`               Port range to scan (e.g., `1-1024`)                 
 
-✅ Custom port range and thread count
+ `--threads`             Number of concurrent threads (default: 100)        
 
-✅ Host availability check (ping)
+ `--output`              File path to save the scan results                 
+ 
+ `--verbose`             Enable detailed output for each scanned port       
 
-✅ Service detection (basic)
+---
 
-✅ Banner grabbing
+## ✨ Features
 
-✅ Output results to a file
+- ✅ **Multithreaded scanning** for faster results  
+- ✅ **Customizable port range** and thread count  
+- ✅ **Host availability check** before scanning  
+- ✅ **Basic service detection**  
+- ✅ **Banner grabbing** for open ports  
+- ✅ **Output results** to a file  
+- ✅ **Verbose mode** for detailed scanning feedback  
+- ✅ **Color-coded results** (Open = Green, Closed = Red)  
+- ✅ **Progress bar** to show scanning status  
 
-✅ Verbose mode for detailed output
+---
 
-✅ Color-coded results (open = green, closed = red)
+## 📦 Requirements
 
-✅ Progress bar during scan
+- Python 3.x  
+- `tqdm` for progress display  
+- `colorama` for colored terminal output  
+
+Install dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🛡️ Disclaimer
+
+This tool is intended for educational and authorized penetration testing purposes **only**. Unauthorized use is prohibited.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
