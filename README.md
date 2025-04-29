@@ -1,4 +1,4 @@
-# 🔍 Port Scanner
+# 🔍 PortScope
 
 A powerful, multithreaded TCP port scanner built with Python. This tool enables efficient and customizable scanning with support for port range selection, threading, host availability checks, service identification, banner grabbing, output logging, and more.
 
